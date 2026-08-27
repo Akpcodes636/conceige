@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  h2 {
+    @apply text-[16px] md:text-[24px] lg:text-[40px];
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-display: var(--font-dm-serif-display);
+  --font-body: var(--font-manrope);
+  --font-poppins: var(--font-poppins);
+
+  --color-primary: #1a2a37;
+  --color-secondary: #88be8d;
+  --color-accent: #889291;
+
+  --color-surface: #fdfbf7;
+  --color-light-green: #e6ece0;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1200px] md:max-w-[1400px] px-4 md:px-2 lg:px-4 xl:px-8;
+  }
+ .bg-hero {
+   background:
+    linear-gradient(
+      255.59deg,
+      rgba(210, 164, 73, 0) -28.19%,
+      #5B805F 76.92%
+    ),
+    url("/images/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
 }
