@@ -2,7 +2,7 @@
 
 import { services } from "@/utils/contents/HomePage.content";
 import { ServiceCard } from "../ui/ServiceCard";
-import Reveal from "../ui/Reveal";
+
 
 export default function Offer() {
   return (
@@ -26,9 +26,7 @@ export default function Offer() {
 
           <div className="mx-auto grid max-w-[1075px] grid-cols-1 justify-items-center gap-[16px]  sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
-              <Reveal key={service.id} delay={Math.min(index, 5) * 80}>
-                <ServiceCard service={service} />
-              </Reveal>
+              <ServiceCard key={service.id} service={service} />
             ))}
           </div>
         </div>

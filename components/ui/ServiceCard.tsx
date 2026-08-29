@@ -6,13 +6,13 @@ import Image from "next/image";
 
 export function ServiceCard({ service }: { service: Service }) {
   return (
-    <article className="group relative mx-auto h-[321px] w-full max-w-[345px] overflow-hidden rounded-[16px] bg-[#1A1614] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0px_16px_32px_0px_#00000040] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+    <article className="group relative mx-auto h-[321px] w-full max-w-full overflow-hidden rounded-[16px] bg-[#1A1614] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0px_16px_32px_0px_#00000040] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
       <Image
         src={service.image}
         alt={service.alt_text}
         fill
         sizes="345px"
-        className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+        className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.04] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
       />
  
       <div

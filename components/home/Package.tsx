@@ -19,11 +19,11 @@ export default function Package() {
           </p>
 
           <div className="w-full mb-[36px]">
-            <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-6 md:grid-cols-3">
               {PACKAGES.map((pkg, index) => (
-                <Reveal key={pkg.title} delay={index * 100}>
+                <Reveal key={pkg.title} delay={index * 100} className="h-full">
                   <div
-                    className={`relative rounded-[24px] border p-6 md:p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
+                    className={`relative flex h-full flex-col rounded-[24px] border p-6 md:p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${
                       pkg.featured
                         ? "border-[#FFAA02] bg-[#FFF8E8] shadow-[0px_4px_24px_0px_#0000001F] hover:shadow-[0px_12px_32px_0px_#0000002E]"
                         : "border-[#E6E8EC] bg-white hover:shadow-[0px_12px_28px_0px_#00000014]"
@@ -71,8 +71,8 @@ export default function Package() {
                     </div>
 
                     {/* Pricing */}
-                    <div className="mt-6">
-                      <p className="font-body text-[13px] leading-[140%] text-[#5E6872] ">
+                    <div className="mt-auto pt-6">
+                      <p className="font-body text-[13px] leading-[140%] text-[#5E6872]">
                         Standard: {pkg.standard}
                       </p>
 

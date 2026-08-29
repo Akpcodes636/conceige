@@ -8,26 +8,25 @@ export default function FounderAbout() {
       <div className="py-[59px] md:py-[89px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-x-[13px] gap-y-[20px]">
-
             {/* Mobile heading */}
             <h2 className="text-[24px] md:text-[28px] text-[#1C2A38] font-poppins font-semibold leading-[100%] mb-[8px] md:mb-[24px] lg:hidden">
               Meet the Founder
             </h2>
 
             {/* Image */}
-           <div className="w-full">
-  <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[24px] bg-[#F4F6F5] border-[1px] border-black">
-    <Image
-      src="/images/Founder.png"
-      fill
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="object-cover scale-110 origin-top"
-      style={{ objectPosition: "50% 20%" }}
-      alt="Founder portrait"
-      priority
-    />
-  </div>
-</div>
+            <div className="w-full">
+              <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[24px] bg-[#F4F6F5] border-[1px] border-black">
+                <Image
+                  src="/images/Founder.png"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover scale-110 origin-top"
+                  style={{ objectPosition: "50% 20%" }}
+                  alt="Founder portrait"
+                  priority
+                />
+              </div>
+            </div>
 
             {/* Content */}
             <div>
@@ -71,7 +70,6 @@ export default function FounderAbout() {
                 family into ours.
               </p>
             </div>
-
           </div>
         </div>
       </div>
