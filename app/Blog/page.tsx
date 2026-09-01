@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Reveal from "@/components/ui/Reveal";
 import Banner from "@/components/home/Banner";
 import { getAllBlogPosts } from "@/utils/supabase/queries";
+import { DEFAULT_OG_IMAGE } from "@/utils/seo";
 
 export const metadata: Metadata = {
   title: "The Cairde Journal – Senior Care Guidance for Dublin Families",
@@ -25,6 +26,14 @@ export const metadata: Metadata = {
     description:
       "Practical guidance for Dublin families navigating senior care decisions from HSE paperwork to everyday wellbeing.",
     url: "/Blog",
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Cairde Journal – Senior Care Guidance for Dublin Families",
+    description:
+      "Practical guidance for Dublin families navigating senior care decisions.",
+    images: [DEFAULT_OG_IMAGE],
   },
   alternates: {
     canonical: "/Blog",

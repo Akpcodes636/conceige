@@ -80,9 +80,9 @@ export default function Package() {
                         {pkg.price}
                       </p>
 
-                      <p className="mt-1 font-body text-[12px] leading-[140%] text-[#5E6872]">
+                      {/* <p className="mt-1 font-body text-[12px] leading-[140%] text-[#5E6872]">
                         {pkg.note}
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </Reveal>

@@ -37,9 +37,9 @@ export default function Daily() {
           <Reveal delay={160}>
             <SupportCard
               icon="/images/majesticons_percent.png"
-              title="Up to 40% tax relief"
+              title=""
               description="Available on every package under Revenue IT 47."
-              alt="Tax relief"
+              alt=""
             />
           </Reveal>
         </div>

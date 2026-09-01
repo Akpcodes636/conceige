@@ -5,6 +5,7 @@ import {
   Poppins,
 } from "next/font/google";
 import "./globals.css";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/utils/seo";
 
 const dmSerifDisplay = DM_Serif_Display({
   variable: "--font-dm-serif-display",
@@ -23,17 +24,20 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
+const DEFAULT_TITLE =
+  "Cairde Concierge | Non-Medical Senior Support in Dublin, Ireland";
+const DEFAULT_DESCRIPTION =
+  "Dedicated non-medical support for seniors in Dublin, Ireland, with the warmth of family. We help seniors stay independent, safe and socially connected at home with consistent, one-on-one companionship families can trust.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL(SITE_URL),
 
   title: {
-    default:
-      "Concierge Design | Non-Medical Senior Support in Dublin, Ireland",
-    template: "%s | Concierge Design",
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
   },
 
-  description:
-    "Dedicated non-medical support for seniors in Dublin, Ireland, with the warmth of family. We help seniors stay independent, safe and socially connected at home with consistent, one-on-one companionship families can trust.",
+  description: DEFAULT_DESCRIPTION,
 
   keywords: [
     "senior support Dublin",
@@ -54,24 +58,40 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://your-domain.com",
-    siteName: "Concierge Design",
-    title:
-      "Concierge Design | Non-Medical Senior Support in Dublin, Ireland",
-    description:
-      "Dedicated support for seniors, with the warmth of family. Helping Dublin seniors stay independent, safe and socially connected at home.",
+    url: "/",
+    siteName: SITE_NAME,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: SITE_NAME }],
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Concierge Design | Non-Medical Senior Support in Dublin, Ireland",
-    description:
-      "Helping Dublin seniors stay independent, safe and socially connected at home.",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
   },
 
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: "/",
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: SITE_NAME,
+  description: DEFAULT_DESCRIPTION,
+  url: SITE_URL,
+  image: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
+  areaServed: {
+    "@type": "City",
+    name: "Dublin",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Dublin",
+    addressCountry: "IE",
   },
 };
 
@@ -90,6 +110,10 @@ export default function RootLayout({
       `}
     >
       <body className="">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         {children}
       </body>
     </html>

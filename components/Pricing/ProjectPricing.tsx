@@ -7,15 +7,15 @@ import Reveal from "../ui/Reveal";
 export default function ProjectPricing() {
   return (
     <section>
-      <div className="py-[35px] md:py-[40px]">
+      <div className="py-[5px] md:py-[40px]">
         <div className="container mx-auto">
           {/* Section label */}
-          <h3 className="mb-[8px] text-left font-body text-[14px] font-semibold leading-[120%] text-[#FFAA02] md:text-center md:text-[18px] lg:text-[20px]">
+          <h3 className="mb-[8px] text-center font-body text-[14px] font-semibold leading-[120%] text-[#FFAA02] md:text-center md:text-[18px] lg:text-[20px]">
             One-off projects & add-ons
           </h3>
 
           {/* Main heading */}
-          <p className="mb-[12px] text-left font-poppins text-[24px] font-semibold leading-[120%] text-[#1C2A38] md:text-center md:text-[28px] lg:text-[39px]">
+          <p className="mb-[12px] text-center font-poppins text-[24px] font-semibold leading-[120%] text-[#1C2A38] md:text-center md:text-[28px] lg:text-[39px]">
             Specialized One-off Projects & Add-on Services
           </p>
 

@@ -98,7 +98,7 @@ export const PACKAGES = [
     ],
     standard: "€45/hr · €360/month",
     price: "€90/week · €360/month",
-    note: "After 60% tax relief",
+    // note: "After 60% tax relief",
     featured: false,
   },
   {
@@ -114,7 +114,7 @@ export const PACKAGES = [
     ],
     standard: "€40/hr · €640/month",
     price: "€160/week · €640/month",
-    note: "After 60% tax relief",
+    // note: "After 60% tax relief",
     featured: true,
   },
   {
@@ -130,7 +130,7 @@ export const PACKAGES = [
     ],
     standard: "€35/hr · €1,120/month",
     price: "€280/week · €1,120/month",
-    note: "After 60% tax relief",
+    // note: "After 60% tax relief",
     featured: false,
   },
 ];
@@ -168,9 +168,9 @@ export const faqItems: FaqItem[] = [
   },
   {
     id: "tax-relief",
-    question: "How does the 40% Irish tax relief work?",
+    question: "How does the  Irish tax relief work?",
     answer:
-      "Under Revenue IT 47 rules, families can claim up to 40% tax relief on the cost of employing a companion or lifestyle assistant. We provide a fully itemised monthly invoice and a comprehensive year-end statement to make claiming through Revenue Online Service (ROS) simple.",
+      "Under Revenue IT 47 rules, families can claim up to on the cost of employing a companion or lifestyle assistant. We provide a fully itemised monthly invoice and a comprehensive year-end statement to make claiming through Revenue Online Service (ROS) simple.",
   },
   {
     id: "cancel",
@@ -301,7 +301,7 @@ export const PACKAGESPRICING = [
     ],
     standard: "€45/hr · €360/month",
     price: "€90/week · €360/month",
-    note: "After 40% tax relief",
+    // note: "After 40% tax relief",
     featured: false,
   },
   {
@@ -317,7 +317,7 @@ export const PACKAGESPRICING = [
     ],
      standard: "€40/hr · €640/month",
     price: "€160/week · €640/month",
-    note: "After 40% tax relief",
+    // note: "After 40% tax relief",
     featured: true,
   },
   {
@@ -333,7 +333,7 @@ export const PACKAGESPRICING = [
     ],
      standard: "€35/hr · €1,120/month",
     price: "€280/week · €1,120/month",
-    note: "After 40% tax relief",
+    // note: "After 40% tax relief",
     featured: false,
   },
 ];

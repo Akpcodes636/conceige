@@ -23,7 +23,7 @@ export default function ServiceSupport() {
               <h1 className="text-[39px] font-medium leading-[120%] font-poppin text-[#1C2A38] mb-[24px]">
                 Supporting the people behind your team
               </h1>
-              <p className="text-[20px] text-[#1C2A38] font-light leading-[160%] mb-[24px] font-body">
+              <p className="text-[16px] md:text-[18px] text-[20px] text-[#1C2A38] font-light leading-[160%] mb-[24px] font-body">
                 Caring responsibilities can affect employees in ways that aren&apos;t always visible at work. Cairde Concierge provides practical, non-medical senior support that can help employees better navigate the responsibilities of caring for ageing parents and loved ones.
               </p>
               <div className="flex items-start justify-start">
