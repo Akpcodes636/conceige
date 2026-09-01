@@ -1,6 +1,7 @@
 "use client";
 
 import Reveal from "./Reveal";
+import Image from "next/image";
 
 const supportPlans = [
   {
@@ -37,57 +38,95 @@ const supportPlans = [
 
 export default function SupportPlans() {
   return (
-    <section className="w-full max-w-full">
-      <div className="grid w-full max-w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {supportPlans.map((plan, index) => {
-          const Icon = plan.icon;
+   <section className="w-full max-w-full">
+  <div className="grid w-full max-w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {supportPlans.map((plan, index) => {
+      const Icon = plan.icon;
 
-          return (
-            <Reveal key={plan.title} delay={Math.min(index, 5) * 80}>
-            <div
-              className="
-                w-full max-w-full
-                h-[279.5px]
-                lg:w-[416px]
-                lg:h-[279.5px]
-                rounded-[16px]
-                lg:rounded-[24px]
-                border
-                border-[#D9A63A]
-                bg-[#FCFAF4]
-                px-8
-                py-[35px]
-                transition-all duration-300
-                hover:-translate-y-1
-                hover:shadow-[0px_12px_28px_0px_#00000014]
-                motion-reduce:transition-none
-                motion-reduce:hover:translate-y-0
-              "
-            >
-              <div className="flex h-full flex-col gap-4">
-                {/* Icon */}
-                <img
+      return (
+        <Reveal key={plan.title} delay={Math.min(index, 5) * 80}>
+          <div
+            className="
+              w-full
+              max-w-full
+              h-[180px]
+              sm:h-[195px]
+              md:h-[220px]
+              lg:w-[416px]
+              lg:h-[279.5px]
+              rounded-[16px]
+              lg:rounded-[24px]
+              border
+              border-[#D9A63A]
+              bg-[#FCFAF4]
+              px-5
+              py-5
+              sm:px-6
+              sm:py-6
+              lg:px-8
+              lg:py-[35px]
+              transition-all
+              duration-300
+              hover:-translate-y-1
+              hover:shadow-[0px_12px_28px_0px_#00000014]
+              motion-reduce:transition-none
+              motion-reduce:hover:translate-y-0
+            "
+          >
+            <div className="flex h-full flex-col gap-3 lg:gap-4">
+              {/* Icon */}
+              <Image
                 src={plan.icon}
                 alt=""
-                className="h-[50px] w-[50px] object-contain"
+                className="
+                  h-[40px]
+                  w-[40px]
+                  sm:h-[45px]
+                  sm:w-[45px]
+                  lg:h-[50px]
+                  lg:w-[50px]
+                  object-contain
+                "
+                width={500}
+                height={500}
               />
 
-                {/* Content */}
-                <div>
-                  <h3 className="text-[20px] md:text-[24px] font-semibold leading-[100%] text-[#1C2A38] mb-[16px]">
-                    {plan.title}
-                  </h3>
+              {/* Content */}
+              <div>
+                <h3
+                  className="
+                    mb-3
+                    text-[18px]
+                    sm:text-[20px]
+                    lg:mb-[16px]
+                    lg:text-[24px]
+                    font-semibold
+                    leading-[110%]
+                    text-[#1C2A38]
+                  "
+                >
+                  {plan.title}
+                </h3>
 
-                  <p className="text-[18px] font-normal leading-[100%] text-[#43586C]">
-                    {plan.description}
-                  </p>
-                </div>
+                <p
+                  className="
+                    text-[15px]
+                    sm:text-[16px]
+                    lg:text-[18px]
+                    font-normal
+                    leading-[130%]
+                    text-[#43586C]
+                  "
+                >
+                  {plan.description}
+                </p>
               </div>
             </div>
-            </Reveal>
-          );
-        })}
-      </div>
-    </section>
+          </div>
+        </Reveal>
+      );
+    })}
+  </div>
+</section>
   );
 }

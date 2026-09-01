@@ -60,7 +60,7 @@ export default function Header() {
           <div className="flex flex-1 items-center justify-between">
             <Logo />
 
-            <Link href="/Request-consultation">
+            <Link href="https://tidycal.com/cairdeconcierege/15-minute-meeting">
               <Button style="danger" type="button" css="w-[146px] h-[50px]">
                 Book a Consultation
               </Button>
@@ -128,7 +128,7 @@ export default function Header() {
           </ul>
 
           <div className="mt-10">
-            <Link href="/Request-consultation">
+            <Link href="https://tidycal.com/cairdeconcierege/15-minute-meeting">
               <Button style="danger" type="button" css="h-[52px] w-full">
                 Book a Consultation
               </Button>

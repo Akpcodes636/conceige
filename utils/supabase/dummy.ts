@@ -18,13 +18,13 @@ export const dummyBlogPosts: BlogPost[] = [
     published_at: "2026-07-14T00:00:00.000Z",
     read_time: "8 min read",
     meta_description:
-      "A plain-English guide to Ireland's Fair Deal Scheme for families in Dublin eligibility, how assets are assessed, how to apply, and what Cairde Concierge can do to help.",
+      "A plain-English guide to Ireland's Nursing Home Support Scheme for families in Dublin eligibility, how assets are assessed, how to apply, and what Cairde Concierge can do to help.",
     keywords: [
-      "Fair Deal Scheme Ireland",
-      "Fair Deal Scheme Dublin",
+      "Nursing Home Support Scheme Ireland",
+      "Nursing Home Support Scheme Dublin",
       "nursing home support scheme",
-      "HSE Fair Deal",
-      "Fair Deal application Ireland",
+      "HSE nursing home support",
+      "Nursing Home Support Scheme application Ireland",
       "elderly care funding Ireland",
       "senior care Dublin",
     ],

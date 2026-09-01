@@ -6,6 +6,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/utils/seo";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const dmSerifDisplay = DM_Serif_Display({
   variable: "--font-dm-serif-display",
@@ -115,6 +116,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

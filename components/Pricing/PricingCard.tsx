@@ -11,8 +11,10 @@ export default function PricingCard() {
           <h1 className="text-[#1C2A38] font-poppins text-[24px] md:text-[28px] lg:text-[39px] leading-[120%] font-semibold text-center mb-[16px]">
             Designed for Peace of Mind
           </h1>
-          <p className="text-[#43586C] text-[16px] md:text-[18px] lg:text-[20px] font-body leading-[16
-          0%] text-center mb-[32px]">
+          <p
+            className="text-[#43586C] text-[16px] md:text-[18px] lg:text-[20px] font-body leading-[16
+          0%] text-center mb-[32px]"
+          >
             We believe in complete transparency. Our non-medical concierge
             services are structured into simple monthly blocks, so your family
             receives consistent, dedicated support without hidden fees.
@@ -75,9 +77,19 @@ export default function PricingCard() {
                         {pkg.price}
                       </p>
 
-                      {/* <p className="mt-1 font-body text-[12px] leading-[140%] text-[#5E6872]">
-                        {pkg.note}
-                      </p> */}
+                      {/* Book Now Button */}
+                      <a
+                        href={pkg.bookingUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`mt-5 flex w-full items-center justify-center rounded-[10px] px-6 py-3.5 font-body text-[15px] font-semibold transition-all duration-300 ${
+                          pkg.featured
+                            ? "bg-[#FFAA02] text-[#1C2A38] hover:bg-[#E99A00]"
+                            : "bg-[#1C2A38] text-white hover:bg-[#2A3B4D]"
+                        }`}
+                      >
+                        Book Now
+                      </a>
                     </div>
                   </div>
                 </Reveal>

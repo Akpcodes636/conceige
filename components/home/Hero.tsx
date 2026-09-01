@@ -15,7 +15,7 @@ export default function Hero() {
           <h1 className="text-[24px] md:text-[36px] lg:text-[49px] font-semibold leading-[120%] font-poppins text-[#FFFFFF] mb-[8px] max-w-full md:max-w-full lg:max-w-[954px]  x-auto">
             Dedicated support for seniors, with the warmth of family
           </h1>
-          <p className="text-[#FFFFFF] font-body text-[16px] md:text-[18px] lg:text-[20px] leading-[100%] mb-[24px]  max-w-full md:max-w-full lg:max-w-[954px]">
+          <p className="text-[#FFFFFF] font-body text-[16px] md:text-[18px] lg:text-[20px] leading-[160%] mb-[24px]  max-w-full md:max-w-full lg:max-w-[954px]">
             Not ready to look at assisted living or nursing homes? We help
             Dublin seniors stay independent, safe and socially connected at home
             with a consistent, one-on-one companion your family can trust.

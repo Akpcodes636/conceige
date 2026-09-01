@@ -2,6 +2,7 @@
 
 import { CorporateContent } from "@/utils/contents/Corporate.content";
 import Reveal from "../ui/Reveal";
+import Image from "next/image";
 
 export default function CorporateBenefits() {
   return (
@@ -23,13 +24,15 @@ export default function CorporateBenefits() {
               <div
                 className="w-full max-w-full md:max-w-full h-[290px] md:h-[363px] rounded-[16px] md:rounded-[24px] border-[2px] bg-[#D2A44929] border-[#D2A449] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0px_12px_28px_0px_#00000021] motion-reduce:transition-none motion-reduce:hover:translate-y-0"
               >
-                <div className="px-[32px] py-[43px]">
+                <div className="px-[32px] py-[33px] md:py-[43px]">
                   {/* Icon */}
                   <div className="w-[50px] h-[50px] mb-[19px]">
-                    <img
+                    <Image
                       src={item.icon}
                       alt=""
                       className="w-full h-full object-contain"
+                      width={500}
+                      height={500}
                     />
                   </div>
 
@@ -39,7 +42,7 @@ export default function CorporateBenefits() {
                   </h2>
 
                   {/* Description */}
-                  <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#43586C] leading-[160%]">
+                  <p className="text-[16px] md:text-[18px] lg:text-[18px] text-[#43586C] leading-[160%]">
                     {item.text}
                   </p>
                 </div>

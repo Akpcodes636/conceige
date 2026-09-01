@@ -11,7 +11,7 @@ export default function Faq() {
           <h1 className="text-[24px] md:text-[28px] lg:text-[39px] text-center text-[#1C2A38] font-semibold font-poppins leading-[120%] mb-[24px] md:mb-[41px]">
             Frequently Asked Questions
           </h1>
-          <Accordion items={faqItems} />
+          <Accordion items={faqItems} allowMultiple={false} />
         </div>
       </div>
     </section>

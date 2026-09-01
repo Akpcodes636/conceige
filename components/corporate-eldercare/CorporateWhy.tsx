@@ -2,6 +2,7 @@
 
 import { Benefits } from "@/utils/contents/Corporate.content";
 import Reveal from "../ui/Reveal";
+import Image from 'next/image'
 
 export default function CorporateWhy() {
   return (
@@ -22,10 +23,12 @@ export default function CorporateWhy() {
                   <div className="px-[32px] py-[43px]">
                     {/* Icon */}
                     <div className="w-[50px] h-[50px] mb-[19px]">
-                      <img
+                      <Image
                         src={item.image}
-                        alt=""
+                        alt="people"
                         className="w-full h-full object-contain"
+                        width={500}
+                        height={500}
                       />
                     </div>
 

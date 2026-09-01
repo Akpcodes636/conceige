@@ -24,12 +24,12 @@ export const navLinks = [
 ];
 
 export const SIGNS = [
-  "Spending more time alone",
-  "Missing appointments or important tasks",
-  "Difficulty keeping up with household responsibilities",
-  "Needing help with transportation or errands",
-  "Relying more heavily on family members for support",
-  "Not quite ready for assisted living, but needing extra assistance",
+  "Withdrawing or Spending less time with others",
+  "Struggling to manage daily household chores",
+  "Leaning more on family for routine daily help",
+  "Forgetting key appointments or daily commitments",
+  "Finding travel or running errands increasingly difficult",
+  "wanting to stay at home, but needing a helping hand",
 ];
 
 
@@ -124,7 +124,7 @@ export const PACKAGES = [
       "Comprehensive, high-level lifestyle coordination for busy families wanting total reassurance.",
     included: [
       "Multiple social and community outings",
-      "GP support, including Fair Deal and Medical Card support",
+      "Hospital Appointment, including Medical Card support",
       "Light home tidying",
       "Fresh meal preparation and assembly several times a week",
     ],
@@ -146,31 +146,31 @@ export const faqItems: FaqItem[] = [
     id: "what-is-it",
     question: "What exactly is Cairde Concierge?",
     answer:
-      "A premium, non-medical companionship and lifestyle management service for older adults in Dublin and surrounding areas: a trusted personal assistant, coordinator, and friendly local neighbour rolled into one, from village errands to Fair Deal Scheme paperwork.",
+      "We are a non-medical companionship and lifestyle management service for older adults in Dublin and surrounding areas. Think of us as a trusted personal assistant, coordinator, and friendly local neighbour all rolled into one. We handle everything from errands and hospital chaperoning to everyday admin and life logistics.",
   },
   {
     id: "medical-care",
     question: "Do you provide medical or personal care?",
     answer:
-      "No. We provide exclusively non-medical concierge and companion services and do not assist with medication administration, bathing, dressing, or physical transfers. We can help coordinate registered homecare providers for clinical needs.",
+      "No. To maintain a strict, clear focus, we provide exclusively non-medical concierge and companion services. We do not assist with medication administration, bathing, dressing, or physical transfers. If your loved one requires clinical or medical assistance, we can help you coordinate with local registered home care providers.",
   },
   {
     id: "coverage-area",
-    question: "What areas do you cover?",
+    question: "How do your packages work?",
     answer:
-      "We currently support families across Dublin and the surrounding areas, including the wider commuter belt. Get in touch to confirm coverage for your loved one's specific location.",
+      "We offer three simple monthly packages, plus specialised one-off projects and add-on services, so you can choose the level of support that fits your family:\n• The Essential Check-In (2 hours/week) — perfect for independent seniors who just need a hand with weekly logistics\n• The Independence Package (6 hours/week, most popular) — a blend of practical support and social connection\n• The Premium Peace of Mind Package (8 hours/week) — comprehensive lifestyle coordination for families wanting full reassurance\nWe also offer Specialised One-Off Projects & Add-On Services — targeted, fixed-price project packages designed to solve specific, stressful household challenges for your loved ones.",
   },
   {
     id: "transport",
     question: "Do you provide transportation?",
     answer:
-      "We don't drive clients in a personal vehicle or drive their vehicles. We act as an expert travel companion via Dublin's public transport, or coordinate and accompany clients in local taxis paid for by the client.",
+      "We do not drive clients in our personal vehicle, nor do we drive clients' personal vehicles. However, we act as an expert travel companion — we travel comfortably using Dublin's public transport, or we can coordinate, book, and accompany your loved one in local taxis (paid for by the client).",
   },
   {
     id: "tax-relief",
-    question: "How does the  Irish tax relief work?",
+    question: "Are you insured and vetted?",
     answer:
-      "Under Revenue IT 47 rules, families can claim up to on the cost of employing a companion or lifestyle assistant. We provide a fully itemised monthly invoice and a comprehensive year-end statement to make claiming through Revenue Online Service (ROS) simple.",
+      "Yes. We are Garda vetted and carry Public Liability Insurance covering the non-medical services we provide. Copies of our vetting and insurance documentation are available on request and can be reviewed during your initial consultation.",
   },
   {
     id: "cancel",
@@ -206,11 +206,28 @@ export const footerColumns: FooterColumn[] = [
 },
 ];
 
-export type SocialLink = { label: string; href: string; icon: "instagram" | "tiktok" };
+export type SocialLink = {
+  label: string;
+  href: string;
+  icon: "instagram" | "tiktok" | "facebook";
+};
 
 export const socialLinks: SocialLink[] = [
-  { label: "Instagram", href: "https://instagram.com/", icon: "instagram" },
-  { label: "TikTok", href: "https://tiktok.com/", icon: "tiktok" },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/patience_tobin?igsi=MWpxMmJ1cnZnaDlwaw==",
+    icon: "instagram",
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@cairde_concierge?_r=1&_t=ZN-99Msn0DAH47",
+    icon: "tiktok",
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/share/19ZbJew96Y/",
+    icon: "facebook",
+  },
 ];
 
 export type Service = {
@@ -303,6 +320,7 @@ export const PACKAGESPRICING = [
     price: "€90/week · €360/month",
     // note: "After 40% tax relief",
     featured: false,
+     bookingUrl: "https://tidycal.com/cairdeconcierege/30-minute-meeting",
   },
   {
     hours: "4 hours / week",
@@ -319,6 +337,8 @@ export const PACKAGESPRICING = [
     price: "€160/week · €640/month",
     // note: "After 40% tax relief",
     featured: true,
+    bookingUrl: "https://tidycal.com/cairdeconcierege/60-minute-meeting",
+
   },
   {
     hours: "8 hours / week",
@@ -327,7 +347,7 @@ export const PACKAGESPRICING = [
       "Comprehensive, high-level lifestyle coordination for busy families wanting total reassurance.",
     included: [
       "Multiple social and community outings",
-      "HSE paperwork, including Fair Deal and Medical Card support",
+      "Accompaniment for hospital or Gp appointments.",
       "Light home tidying",
       "Fresh meal preparation and assembly several times a week",
     ],
@@ -335,6 +355,8 @@ export const PACKAGESPRICING = [
     price: "€280/week · €1,120/month",
     // note: "After 40% tax relief",
     featured: false,
+    bookingUrl:"https://tidycal.com/cairdeconcierege/the-premium-peace-of-mind-package-8hours-per-week",
+
   },
 ];
 
@@ -390,10 +412,10 @@ export const Project = [
   {
     id: "welcome-home-discharge-package",
     tag: "Hospital Transition",
-    title: "The 'Welcome Home' Hospital Discharge Package",
-    subtitle: "A safe, calm, fully prepared return home after a hospital stay.",
+    title: "The \"Welcome Home\" Hospital Discharge Package",
+    subtitle: "A warm, safe, fully prepared home after a hospital stay.",
     intro:
-      "Leaving hospital is a vulnerable moment. We make sure the home is clean, warm, stocked, and ready before your loved one walks back through the door.",
+      "Leaving hospital after a medical procedure or extended stay can be an incredibly stressful transition for both the patient and their family. We step in to manage the homecoming, with your written authorisation to liaise with the hospital discharge team.",
     details: [
       {
         label: "Pre-arrival preparation",
@@ -405,14 +427,14 @@ export const Project = [
       },
       {
         label: "Prescription collection",
-        text: "we liaise with the hospital discharge team and collect necessary prescriptions from the local pharmacy.",
+        text: "we liaise with the hospital discharge team and collect necessary prescriptions from the local chemist.",
       },
       {
         label: "Seamless arrival",
-        text: "we arrange public transport or a taxi partner to bring them home, welcome them at the door, help them unpack, and settle them in with a hot cup of tea.",
+        text: "we arrange public transport or a taxi (paid for by the client) and are there to personally welcome them at the door, help them unpack, and settle in with a hot cup of tea.",
       },
     ],
-    price: "€250 flat fee",
+    price: "€450 flat fee",
     priceNote: "Hardware/devices not included",
   },
   {
@@ -481,13 +503,13 @@ export const Blog: BlogPost[] = [
     date: "2026-07-14",
     readTime: "8 min read",
     metaDescription:
-      "A plain-English guide to Ireland's Fair Deal Scheme for families in Dublin  eligibility, how assets are assessed, how to apply, and what Cairde Concierge can do to help.",
+      "A plain-English guide to Ireland's Nursing Home Support Scheme for families in Dublin  eligibility, how assets are assessed, how to apply, and what Cairde Concierge can do to help.",
     keywords: [
-      "Fair Deal Scheme Ireland",
-      "Fair Deal Scheme Dublin",
+      "Nursing Home Support Scheme Ireland",
+      "Nursing Home Support Scheme Dublin",
       "nursing home support scheme",
-      "HSE Fair Deal",
-      "Fair Deal application Ireland",
+      "HSE nursing home support",
+      "Nursing Home Support Scheme application Ireland",
       "elderly care funding Ireland",
       "senior care Dublin",
     ],

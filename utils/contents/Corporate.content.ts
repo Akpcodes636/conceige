@@ -2,7 +2,7 @@ export const CorporateContent = [
     {
         icon:"/images/Vector-6.png",
         title:"Practical support",
-        text:"From grocery shopping and weekly errands to light household tasks, we help keep everyday routines running smoothly."
+        text:"Accompaniment and chaperone for hospital or Gp appointments and social gatherings.Reports and updates sent directly to the faimily"
     },
     {
         icon:"/images/Vector-7.png",
@@ -11,14 +11,14 @@ export const CorporateContent = [
     },
     {
         icon:"/images/Vector-8.png",
-        title:"Administrative Support",
-        text:"Meaningful conversations, shared interests, hobbies, and local walks that bring connection, enjoyment, and companionship to everyday life."  
+        title:"Virtual Administration Support",
+        text:"Virtual administration support service to families across ireland and the diaspora abroad.Online shopping,light tech support."  
     }
 ]
 
 export const CorporateAudience = [
   {
-    image: "/images/corporate-1.jpg",
+    image: "/images/c.jpg",
     title: "Employers",
     text: "For organisations that want to recognise and support the responsibilities their employees carry beyond the workplace.",
   },

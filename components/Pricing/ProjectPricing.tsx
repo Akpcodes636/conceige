@@ -77,9 +77,9 @@ export default function ProjectPricing() {
                           {item.price}
                         </h3>
 
-                        <p className="font-body text-[16px] font-normal leading-[160%] text-[#43586C]">
+                        {/* <p className="font-body text-[16px] font-normal leading-[160%] text-[#43586C]">
                           {item.priceNote}
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>

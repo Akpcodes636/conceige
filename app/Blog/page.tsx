@@ -11,11 +11,11 @@ import { DEFAULT_OG_IMAGE } from "@/utils/seo";
 export const metadata: Metadata = {
   title: "The Cairde Journal – Senior Care Guidance for Dublin Families",
   description:
-    "Practical articles on navigating senior care in Dublin Fair Deal paperwork, home support, companionship, and everyday wellbeing for older adults in Ireland.",
+    "Practical articles on navigating senior care in Dublin nursing home paperwork, home support, companionship, and everyday wellbeing for older adults in Ireland.",
   keywords: [
     "senior care blog Dublin",
     "elderly care advice Ireland",
-    "Fair Deal Scheme guide",
+    "nursing home support scheme guide",
     "home support Dublin",
     "ageing at home Ireland",
     "elder care resources Dublin",

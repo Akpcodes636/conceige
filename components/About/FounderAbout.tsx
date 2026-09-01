@@ -17,7 +17,7 @@ export default function FounderAbout() {
             <div className="w-full">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[24px] border-[1px] border-black bg-[#F4F6F5]">
                 <Image
-                  src="/images/Founder.png"
+                  src="/images/founder-1.jpg"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="origin-top scale-110 object-cover"

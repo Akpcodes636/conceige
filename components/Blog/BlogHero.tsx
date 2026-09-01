@@ -9,7 +9,7 @@ export default function BlogHero() {
           <p className="text-[16px] md:text-[24px] text-[#FFFFFF] text-left md:text-center lg:text-center leading-[16
           0%] font-body w-full max-w-full md:max-w-full lg:max-w-[796px] mx-auto">
             Practical guidance for Dublin families navigating senior care
-            decisions- from HSE paperwork to everyday wellbeing.
+            decisions from paperwork to everyday wellbeing.
           </p>
         </div>
       </div>

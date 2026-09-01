@@ -11,7 +11,7 @@ export default function Banner() {
           <h1 className="text-[#FFFFFF] text-[24px] md:text-[28px] lg:text-[39px] font-poppins leading-[120%] text-center mb-[8px]">
             Let&apos;s take the stress off your shoulders
           </h1>
-          <p className="text-[#FFFFFF] text-[16px] md:text-[20px] font-body leading-[100%] font-normal text-center mb-[20px] md:mb-[36px]">
+          <p className="text-[#FFFFFF] text-[16px] md:text-[20px] font-body leading-[160%] font-normal text-center mb-[20px] md:mb-[36px]">
             Request a complimentary, no-obligation consultation call. We&apos;ll
             get back to you within 24 business hours.
           </p>

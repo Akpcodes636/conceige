@@ -12,8 +12,7 @@ export default function Daily() {
             Support built around daily life
           </h1>
           <p className="font-normal leading-[100%] text-[#43586C] text-center">
-            From weekly errands to hospital chaperoning and Fair Deal Scheme
-            paperwork.
+            From weekly errands to hospital chaperoning
           </p>
         </div>
 
