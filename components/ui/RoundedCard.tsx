@@ -20,7 +20,7 @@ export default function RoundedCard({ text }: TextSection) {
           />
         </div>
 
-        <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[100%] text-[#1A1A1A] font-body">
+        <p className="text-[16px] md:text-[18px] lg:text-[18px] leading-[100%] text-[#1A1A1A] font-body">
           {text}
         </p>
       </div>

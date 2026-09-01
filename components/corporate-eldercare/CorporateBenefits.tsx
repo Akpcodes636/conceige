@@ -11,7 +11,7 @@ export default function CorporateBenefits() {
           <h1 className="text-[#1C2A38] text-[24px] md:text-[28px] lg:text-[39px] leading-[120%] font-poppins font-semibold mb-[24px] md:mb-[16px] lg:mb-[16px] text-left md:text-center lg:text-center">
             A more supportive benefit for your employees
           </h1>
-          <p className="text-[16px] md:text-[18px] lg:text-[20px] font-body leading-[100%] text-[#43586C] w-full max-w-full md:max-w-full lg:max-w-[974px] mx-auto text-left md:text-center lg:text-center mb-[38px] md:mb-[43px]">
+          <p className="text-[16px] md:text-[18px] lg:text-[20px] font-body leading-[160%] text-[#43586C] w-full max-w-full md:max-w-full lg:max-w-[974px] mx-auto text-left md:text-center lg:text-center mb-[38px] md:mb-[43px]">
             Through dedicated, non-medical senior support, employees can access
             practical assistance that helps their families remain independent,
             connected, and supported at home.
@@ -34,12 +34,12 @@ export default function CorporateBenefits() {
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-[#1C2A38] text-[20px] md:text-[25px] leading-[120%] font-poppins font-semibold mb-[16px]">
+                  <h2 className="text-[#1C2A38] text-[20px] md:text-[25px] leading-[160%] font-poppins font-semibold mb-[16px]">
                     {item.title}
                   </h2>
 
                   {/* Description */}
-                  <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#43586C] leading-[100%]">
+                  <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#43586C] leading-[160%]">
                     {item.text}
                   </p>
                 </div>

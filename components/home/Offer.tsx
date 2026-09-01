@@ -15,7 +15,7 @@ export default function Offer() {
           <h2 className="font-body text-[24px] md:text-[29px] lg:text-[39px] mb-[16px] text-[#FFFFFF] leading-[120%] text-center">
             Everyday Support, Personalised to You
           </h2>
-          <p className="text-[16px] leading-[100%] text-[#FFFFFFB2] text-center max-w-full md:max-w-full lg:max-w-[999px] mx-auto mb-[43px]">
+          <p className="text-[18px] leading-[160%] text-[#FFFFFFB2] text-center max-w-full md:max-w-full lg:max-w-[999px] mx-auto mb-[43px]">
             Unlike large, traditional care agencies that send a rotating door of
             different staff members, we provide a consistent, one-on-one
             partnership. We do not provide medical or hands-on personal care.
@@ -24,7 +24,7 @@ export default function Offer() {
             their social schedules.
           </p>
 
-          <div className="mx-auto grid max-w-[1075px] grid-cols-1 justify-items-center gap-[16px]  sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-[1075px] grid-cols-1 gap-[16px]  sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <ServiceCard key={service.id} service={service} />
             ))}

@@ -24,13 +24,13 @@ export default function CorporateResponsibilities() {
                 who needs regular companionship.
               </p>
 
-              <p className="text-[#43586C] text-[16px] mdd:text-[18px] lg:text-[20px] leading-[100%] mb-[20px]">
+              <p className="text-[#43586C] text-[16px] mdd:text-[18px] lg:text-[20px] leading-[160%] font-body mb-[20px]">
                 For employees managing these responsibilities alongside their
                 careers, the pressure can be overwhelming.
               </p>
-              <p className="text-[#43586C] text-[16px] md:text-[18px] lg:text-[20px] leading-[100%] mb-[20px]">
+              <p className="text-[#43586C] text-[16px] md:text-[18px] lg:text-[20px] leading-[160%] font-body mb-[20px]">
                 Corporate Eldercare gives families practical support where they
-                need it most — helping make everyday responsibilities more
+                need it most helping make everyday responsibilities more
                 manageable.
               </p>
             </div>

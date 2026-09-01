@@ -9,7 +9,7 @@ export default function CorporateFamilies() {
         <div className="py-[46px] md:py-[66px] lg:py-[75px]">
           <div className="container mx-auto">
             <h1 className="text-[#1C2A38] text-[39px] font-poppins font-semibold leading-[120%] mb-[43px] text-center">
-              Why offer Corporate Eldercare?
+              Why Families Choose Cairde Concierge
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
@@ -34,7 +34,7 @@ export default function CorporateFamilies() {
                     </h2>
 
                     {/* Description */}
-                    <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#43586C] leading-[100%]">
+                    <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#43586C] leading-[160%]">
                       {item.text}
                     </p>
                   </div>

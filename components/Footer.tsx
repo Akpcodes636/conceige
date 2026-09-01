@@ -45,7 +45,7 @@ export default function Footer({
         <div className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-[1.6fr_repeat(4,minmax(0,1fr))] md:gap-x-6">
           <div className="col-span-2 max-w-xs md:col-span-1">
           <Logo />
-            <p className="text-[13px] leading-[1.75]">{blurb}</p>
+            <p className="text-[16px] leading-[1.75] text-white">{blurb}</p>
           </div>
 
           {footerColumns.map((column) => (

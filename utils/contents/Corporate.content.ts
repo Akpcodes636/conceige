@@ -11,7 +11,7 @@ export const CorporateContent = [
     },
     {
         icon:"/images/Vector-8.png",
-        title:"HSE & Administrative Support",
+        title:"Administrative Support",
         text:"Meaningful conversations, shared interests, hobbies, and local walks that bring connection, enjoyment, and companionship to everyday life."  
     }
 ]
@@ -55,7 +55,7 @@ export const Families = [
   {
     image: "/images/Vector-6.png",
     title: "One Trusted Companion",
-    text: "A consistent, dedicated partner — never a rotating roster of unfamiliar carers.",
+    text: "A consistent, dedicated partner never a rotating roster of unfamiliar carers.",
   },
   {
     image:"/images/clarity_design-solid.png",

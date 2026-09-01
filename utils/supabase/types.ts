@@ -26,7 +26,12 @@ export type Database = {
         Row: BlogPost;
         Insert: Omit<BlogPost, "id" | "created_at">;
         Update: Partial<Omit<BlogPost, "id" | "created_at">>;
+        Relationships: [];
       };
     };
+    Views: Record<string, never>;
+    Functions: Record<string, never>;
+    Enums: Record<string, never>;
+    CompositeTypes: Record<string, never>;
   };
 };

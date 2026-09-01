@@ -11,7 +11,7 @@ export default function CorporateHero() {
           <h1 className="font-poppins text-[24px] md:text-[34px] lg:text-[49px] text-[#FFFFFF] text-start md:text-center font-bold leading-[120%]">
             Our Senior Support services in Dublin
           </h1>
-          <p className="text-[16px] md:text-[24px] text-[#FFFFFF] text-left md:text-center lg:text-center leading-[100%] font-body w-full max-w-full md:max-w-full lg:max-w-[896px] mx-auto mb-[16px]">
+          <p className="text-[16px] md:text-[24px] text-[#FFFFFF] text-left md:text-center lg:text-center leading-[160%] font-body w-full max-w-full md:max-w-full lg:max-w-[896px] mx-auto mb-[16px]">
             Non-medical, concierge-style support built around your loved
             one&apos;s daily routine.
           </p>

@@ -7,7 +7,7 @@ const PACKAGE_OPTIONS = [
   "The Essential Check-In",
   "The Independence Package",
   "The Premium Peace of Mind Package",
-  "Not sure yet — help me decide",
+  "Not sure yet help me decide",
 ];
 
 interface FormValues {
@@ -312,7 +312,7 @@ export default function Form() {
 
               {status === "success" && (
                 <p className="mt-[16px] font-body text-[14px] text-[#5B805F]">
-                  Thank you! Your consultation request has been sent — we&apos;ll
+                  Thank you! Your consultation request has been sent we&apos;ll
                   be in touch soon.
                 </p>
               )}

@@ -31,7 +31,7 @@ const supportPlans = [
     icon: "/images/Icon-5.png",
     title: "Works alongside careers",
     description:
-      "Happy to complement existing home care or family support — no overlap, no confusion.",
+      "Happy to complement existing home care or family support no overlap, no confusion.",
   },
 ];
 

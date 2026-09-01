@@ -23,9 +23,9 @@ export default function Home() {
       <Reveal>
         <Process />
       </Reveal>
-      <Reveal>
+      {/* <Reveal> */}
         <Offer />
-      </Reveal>
+      {/* </Reveal> */}
       <Reveal>
         <Package />
       </Reveal>

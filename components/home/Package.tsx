@@ -14,7 +14,7 @@ export default function Package() {
             Simple, transparent packages
           </h1>
           <p className="text-[#43586C] text-[16px] md:text-[18px] lg:text-[20px] leading-[100%] font-body text-center mb-[37px]">
-            Monthly blocks of dedicated support — with up to 40% Irish tax
+            Monthly blocks of dedicated support with up to Irish tax
             relief under Revenue IT 47.
           </p>
 

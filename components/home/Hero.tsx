@@ -18,7 +18,7 @@ export default function Hero() {
           <p className="text-[#FFFFFF] font-body text-[16px] md:text-[18px] lg:text-[20px] leading-[100%] mb-[24px]  max-w-full md:max-w-full lg:max-w-[954px]">
             Not ready to look at assisted living or nursing homes? We help
             Dublin seniors stay independent, safe and socially connected at home
-            — with a consistent, one-on-one companion your family can trust.
+            with a consistent, one-on-one companion your family can trust.
           </p>
           <div className="flex flex-col gap-[12px] sm:flex-row sm:gap-x-[10px]">
             <Link href="/Request-consultation">

@@ -26,7 +26,7 @@ export default function Why() {
                 Cairde Concierge was founded to meet a vital, growing need in
                 Dublin: ensuring every senior has the opportunity to live with
                 dignity, comfort, and joy right at home. We don&apos;t believe
-                in one-size-fits-all solutions — our team builds real
+                in one-size-fits-all solutions our team builds real
                 relationships so clients feel valued, respected, and supported
                 every day.
               </p>

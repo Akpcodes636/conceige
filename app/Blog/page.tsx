@@ -10,7 +10,7 @@ import { getAllBlogPosts } from "@/utils/supabase/queries";
 export const metadata: Metadata = {
   title: "The Cairde Journal – Senior Care Guidance for Dublin Families",
   description:
-    "Practical articles on navigating senior care in Dublin — Fair Deal paperwork, home support, companionship, and everyday wellbeing for older adults in Ireland.",
+    "Practical articles on navigating senior care in Dublin Fair Deal paperwork, home support, companionship, and everyday wellbeing for older adults in Ireland.",
   keywords: [
     "senior care blog Dublin",
     "elderly care advice Ireland",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "The Cairde Journal – Senior Care Guidance for Dublin Families",
     description:
-      "Practical guidance for Dublin families navigating senior care decisions — from HSE paperwork to everyday wellbeing.",
+      "Practical guidance for Dublin families navigating senior care decisions from HSE paperwork to everyday wellbeing.",
     url: "/Blog",
   },
   alternates: {

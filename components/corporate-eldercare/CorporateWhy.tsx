@@ -30,12 +30,12 @@ export default function CorporateWhy() {
                     </div>
 
                     {/* Title */}
-                    <h2 className="text-[#1C2A38] text-[20px] md:text-[25px] leading-[120%] font-poppins font-semibold mb-[16px]">
+                    <h2 className="text-[#1C2A38] text-[20px] md:text-[25px] leading-[120%] font-poppins font-semibold mb-[4px]">
                       {item.title}
                     </h2>
 
                     {/* Description */}
-                    <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#43586C] leading-[100%]">
+                    <p className="text-[16px] md:text-[18px] lg:text-[20px]  text-[#43586C] leading-[160%] font-body">
                       {item.text}
                     </p>
                   </div>

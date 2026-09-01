@@ -17,6 +17,7 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
   const { data, error } = await supabase
     .from("blog_posts")
     .select("*")
+    .lte("published_at", new Date().toISOString())
     .order("published_at", { ascending: false });
 
   if (error) {
@@ -37,6 +38,7 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> 
     .from("blog_posts")
     .select("*")
     .eq("slug", slug)
+    .lte("published_at", new Date().toISOString())
     .single();
 
   if (error) {
@@ -55,7 +57,8 @@ export async function getAllBlogSlugs(): Promise<string[]> {
   const supabase = await getSupabaseClient();
   const { data, error } = await supabase
     .from("blog_posts")
-    .select("slug");
+    .select("slug")
+    .lte("published_at", new Date().toISOString());
 
   if (error) {
     console.error("Error fetching blog slugs:", error.message);
