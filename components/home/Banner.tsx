@@ -16,7 +16,7 @@ export default function Banner() {
             get back to you within 24 business hours.
           </p>
           <div className="flex items-center justify-center">
-            <Link href="/Request-consultation">
+            <Link href="https://tidycal.com/cairdeconcierege/15-minute-meeting">
               <Button style="primary" type="button">
                 Book a consultation
               </Button>

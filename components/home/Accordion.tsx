@@ -138,9 +138,9 @@ function FaqCard({ item, open, onToggle, delay }: FaqCardProps) {
             onClick={onToggle}
             aria-expanded={open}
             aria-controls={panelId}
-            className="flex w-full items-start justify-between gap-3 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B08A4A]"
+            className="flex w-full min-h-[48px] items-start justify-between gap-3 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B08A4A] md:min-h-[58px]"
           >
-            <span className="font-poppins text-[20px] font-semibold leading-[100%] text-[#1A1A1A] md:text-[24px]">
+            <span className="font-poppins text-[20px] font-semibold leading-[120%] text-[#1A1A1A] md:text-[24px]">
               {item.question}
             </span>
             <ToggleIcon open={open} />

@@ -51,7 +51,7 @@ export default function ServiceSign() {
 
           {/* CTA */}
           <div className="mt-[30px] flex items-center justify-center md:mt-[40px]">
-            <Link href="/Request-consultation">
+             <Link href="https://tidycal.com/cairdeconcierege/15-minute-meeting">
               <Button
                 style="tertiary"
                 type="button"

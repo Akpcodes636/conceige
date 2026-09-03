@@ -244,7 +244,7 @@ export const services: Service[] = [
     id: "lifestyle-assistance",
     title: "Lifestyle Assistance",
     description: "Preserving routine, comfort, and independence at home.",
-    image: "/images/image-1.png",
+    image: "/images/image-1.jpg",
     alt_text: "A carer and an older woman chatting in a bright sitting room",
     link: "/MoreServices",
   },
@@ -253,7 +253,7 @@ export const services: Service[] = [
     title: "Companionship & Social Engagement",
     description:
       "Bringing joy, connection, and meaningful conversation into every day.",
-    image: "/images/image-2.jpg",
+    image: "/images/image-2ss.jpg",
     alt_text: "Two women talking together on a garden terrace",
     link: "/MoreServices",
   },
