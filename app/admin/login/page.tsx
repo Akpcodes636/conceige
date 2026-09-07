@@ -17,13 +17,20 @@ export default function AdminLoginPage() {
     setError(null);
 
     const supabase = createSupabaseBrowserClient();
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
 
     if (error) {
       setError(error.message);
+      setLoading(false);
+      return;
+    }
+
+    if (data.user?.app_metadata?.role !== "admin") {
+      await supabase.auth.signOut();
+      setError("This account does not have admin access.");
       setLoading(false);
       return;
     }

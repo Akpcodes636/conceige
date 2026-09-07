@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { signOut } from "../actions";
+import { requireAdmin } from "@/utils/supabase/authz";
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  await requireAdmin();
+
   return (
     <div className="min-h-screen bg-[#F5F5F4]">
       <header className="bg-white border-b border-[#E5E7EB]">

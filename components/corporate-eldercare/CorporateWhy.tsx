@@ -11,7 +11,7 @@ export default function CorporateWhy() {
         <div className="py-[46px] md:py-[66px] lg:py-[75px]">
           <div className="container mx-auto">
             <h1 className="text-[#1C2A38] text-[39px] font-poppins font-semibold leading-[120%] mb-[43px] text-center">
-              Why offer Corporate Eldercare?
+              Why offer Corporate Elder Support?
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
