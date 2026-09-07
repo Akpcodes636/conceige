@@ -7,7 +7,7 @@ export default function CorporateHero() {
             For HR, EAPs &amp; Wellness Coordinators &middot; Dublin
           </p>
           <h1 className="font-poppins text-[24px] md:text-[34px] lg:text-[49px] text-[#FFFFFF] text-center font-bold leading-[120%] mb-[16px]">
-            Corporate Eldercare &amp; Employee Wellness Solutions
+            Corporate Elder Support &amp; Employee Wellness Solutions
           </h1>
           <p className="text-[16px] md:text-[24px] text-[#FFFFFF] text-center leading-[160%] font-body w-full max-w-full lg:max-w-[896px] mx-auto">
             Supporting your workforce by relieving the silent strain of
