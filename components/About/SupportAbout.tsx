@@ -1,7 +1,12 @@
-
 "use client";
 
 import Image from "next/image";
+
+const badges = [
+  { title: "Non-Medical", text: "Practical lifestyle support." },
+  { title: "Personalised", text: "Built around each individual." },
+  { title: "Dublin Based", text: "Supporting local families." },
+];
 
 export default function SupportAbout() {
   return (
@@ -11,39 +16,23 @@ export default function SupportAbout() {
           <div className="grid grid-cols-1 gap-x-[13px] md:grid-cols-[2fr_1fr]">
             <div>
               <h2 className="mb-[8px] font-body text-[14px] font-semibold leading-[120%] text-[#FFAA02] md:mb-[24px] md:text-[18px] lg:text-[20px]">
-                Non-Medical Senior Support in Dublin, Ireland.
+                Who We Are
               </h2>
 
               <p className="mb-[24px] font-poppins text-[24px] font-semibold leading-[120%] text-[#1C2A38] md:text-[28px] lg:text-[39px]">
-                Dedicated to genuine, non-medical senior support.
+                More than support. A trusted friend by your side.
               </p>
 
               <p className="mb-[16px] font-body text-[16px] leading-[160%] text-[#43586C] md:text-[18px] lg:text-[20px]">
                 We are dedicated to providing compassionate, personalised,
                 non-medical support that allows seniors to maintain their
-                independence and quality of life while receiving the practical
-                help they need.
+                independence and quality of life while receiving the
+                practical help they need.
               </p>
 
-              <p className="mb-[16px] font-body text-[16px] leading-[160%] text-[#43586C] md:text-[18px] lg:text-[20px]">
-                In Irish, Cairde means friends  that single word defines our
-                philosophy, our standards, and everything we do. Cairde
-                Concierge was founded to meet a vital, growing need within Irish
-                communities: ensuring every senior has the opportunity to live
-                with dignity, comfort, and joy right at home. We provide
-                non-medical support designed to enrich daily life for seniors,
-                while bringing real peace of mind to the families who love them
-                often alongside, not instead of, any medical or personal care
-                already in place.
-              </p>
-
-              <p className="mb-[10px] font-body text-[16px] leading-[160%] text-[#43586C] md:text-[18px] lg:text-[20px]">
-                We know that choosing the right support is one of the most
-                significant decisions a family will make. That&apos;s why we
-                don&apos;t believe in one-size-fits-all solutions. We&apos;re
-                committed to building genuine, meaningful relationships with
-                clients, ensuring they feel valued, respected, and supported
-                every single day.
+              <p className="font-body text-[16px] leading-[160%] text-[#43586C] md:text-[18px] lg:text-[20px]">
+                In Irish, Cairde means friends — and that single word defines
+                our philosophy, our standards, and everything we do.
               </p>
             </div>
 
@@ -59,9 +48,24 @@ export default function SupportAbout() {
               </div>
             </div>
           </div>
+
+          <div className="mt-[40px] grid grid-cols-1 gap-4 md:mt-[56px] md:grid-cols-3">
+            {badges.map((badge) => (
+              <div
+                key={badge.title}
+                className="rounded-[16px] border border-[#D2A449] bg-[#D2A44929] px-6 py-5"
+              >
+                <p className="font-poppins text-[18px] font-semibold leading-[120%] text-[#1C2A38] md:text-[20px]">
+                  {badge.title}
+                </p>
+                <p className="mt-1 font-body text-[15px] leading-[150%] text-[#43586C] md:text-[16px]">
+                  {badge.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import CorporateBenefits from "@/components/corporate-eldercare/CorporateBenefits";
+import CorporateCTA from "@/components/corporate-eldercare/CorporateCTA";
 import CorporateFamilies from "@/components/corporate-eldercare/CorporateFamilies";
 import CorporateHero from "@/components/corporate-eldercare/CorporateHero";
-import CorporateResponsibilities from "@/components/corporate-eldercare/CorporateResponsibilities";
-import CorporateWho from "@/components/corporate-eldercare/CorporateWho";
+import CorporateIntro from "@/components/corporate-eldercare/CorporateIntro";
+import CorporatePartnership from "@/components/corporate-eldercare/CorporatePartnership";
+import CorporateSeminar from "@/components/corporate-eldercare/CorporateSeminar";
 import CorporateWhy from "@/components/corporate-eldercare/CorporateWhy";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -15,7 +16,7 @@ import { buildPageMetadata } from "@/utils/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Corporate Eldercare",
   description:
-    "Employee benefit programmes that support staff caring for elderly parents — practical, one-on-one eldercare assistance for Dublin employers.",
+    "Corporate eldercare seminars and preferred-provider partnerships for HR, EAPs and Wellness Coordinators supporting Dublin's Sandwich Generation employees.",
   path: "/corporate-eldercare",
 });
 
@@ -24,9 +25,10 @@ export default function Page() {
     <>
       <Header />
       <Reveal><CorporateHero /></Reveal>
-      <Reveal><CorporateResponsibilities /></Reveal>
-      <CorporateBenefits />
-      <Reveal><CorporateWho /></Reveal>
+      <Reveal><CorporateIntro /></Reveal>
+      <Reveal><CorporateSeminar /></Reveal>
+      <Reveal><CorporatePartnership /></Reveal>
+      <Reveal><CorporateCTA /></Reveal>
       <CorporateWhy />
       <CorporateFamilies />
       <Reveal><Faq /></Reveal>

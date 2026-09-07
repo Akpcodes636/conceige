@@ -96,6 +96,17 @@ export default function PricingCard() {
               ))}
             </div>
           </div>
+
+          {/* Booking Notice */}
+          <div className="mx-auto mt-8 max-w-[900px] rounded-[12px] border border-[#DDE2E7] bg-[#F7F9FA] px-5 py-4 text-center">
+            <p className="font-body text-[13px] leading-[150%] text-[#43586C] md:text-[14px]">
+              <span className="font-semibold text-[#1C2A38]">
+                Booking Notice:
+              </span>{" "}
+              Bookings should be made at least{" "}
+              <span className="font-semibold">24–48 hours</span> in advance.
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -17,7 +17,7 @@ type PageMetadataInput = {
 
 /**
  * Next.js replaces (rather than deep-merges) a segment's `openGraph`/`twitter`
- * object wholesale when a child route defines its own — so every page needs
+ * object wholesale when a child route defines its own so every page needs
  * to repeat `images`, or social shares silently lose the preview image.
  */
 export function buildPageMetadata({

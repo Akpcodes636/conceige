@@ -158,13 +158,13 @@ export const faqItems: FaqItem[] = [
     id: "coverage-area",
     question: "How do your packages work?",
     answer:
-      "We offer three simple monthly packages, plus specialised one-off projects and add-on services, so you can choose the level of support that fits your family:\n• The Essential Check-In (2 hours/week) — perfect for independent seniors who just need a hand with weekly logistics\n• The Independence Package (6 hours/week, most popular) — a blend of practical support and social connection\n• The Premium Peace of Mind Package (8 hours/week) — comprehensive lifestyle coordination for families wanting full reassurance\nWe also offer Specialised One-Off Projects & Add-On Services — targeted, fixed-price project packages designed to solve specific, stressful household challenges for your loved ones.",
+      "We offer three simple monthly packages, plus specialised one-off projects and add-on services, so you can choose the level of support that fits your family:\n• The Essential Check-In (2 hours/week) perfect for independent seniors who just need a hand with weekly logistics\n• The Independence Package (6 hours/week, most popular) a blend of practical support and social connection\n• The Premium Peace of Mind Package (8 hours/week) comprehensive lifestyle coordination for families wanting full reassurance\nWe also offer Specialised One-Off Projects & Add-On Services targeted, fixed-price project packages designed to solve specific, stressful household challenges for your loved ones.",
   },
   {
     id: "transport",
     question: "Do you provide transportation?",
     answer:
-      "We do not drive clients in our personal vehicle, nor do we drive clients' personal vehicles. However, we act as an expert travel companion — we travel comfortably using Dublin's public transport, or we can coordinate, book, and accompany your loved one in local taxis (paid for by the client).",
+      "We do not drive clients in our personal vehicle, nor do we drive clients' personal vehicles. However, we act as an expert travel companion we travel comfortably using Dublin's public transport, or we can coordinate, book, and accompany your loved one in local taxis (paid for by the client).",
   },
   {
     id: "tax-relief",
@@ -202,6 +202,13 @@ export const footerColumns: FooterColumn[] = [
   links: [
     { label: "Contact", href: "/Request-consultation" },
     { label: "+353 87 003 3223", href: "tel:+353870033223" },
+  ],
+},
+{
+  title: "Legal",
+  links: [
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Use", href: "/terms-of-use" },
   ],
 },
 ];
@@ -306,6 +313,7 @@ export const services: Service[] = [
 
 export const PACKAGESPRICING = [
   {
+    type: "package",
     hours: "2 hours / week",
     title: "The Essential Check-In",
     description:
@@ -318,11 +326,13 @@ export const PACKAGESPRICING = [
     ],
     standard: "€45/hr · €360/month",
     price: "€90/week · €360/month",
-    // note: "After 40% tax relief",
     featured: false,
-     bookingUrl: "https://tidycal.com/cairdeconcierege/30-minute-meeting",
+    bookingUrl:
+      "https://tidycal.com/cairdeconcierege/30-minute-meeting",
   },
+
   {
+    type: "package",
     hours: "4 hours / week",
     title: "The Independence Package",
     description:
@@ -333,30 +343,66 @@ export const PACKAGESPRICING = [
       "Light meal preparation",
       "Local neighbourhood walks",
     ],
-     standard: "€40/hr · €640/month",
+    standard: "€40/hr · €640/month",
     price: "€160/week · €640/month",
-    // note: "After 40% tax relief",
     featured: true,
-    bookingUrl: "https://tidycal.com/cairdeconcierege/60-minute-meeting",
-
+    bookingUrl:
+      "https://tidycal.com/cairdeconcierege/60-minute-meeting",
   },
+
   {
+    type: "package",
     hours: "8 hours / week",
     title: "The Premium Peace of Mind Package",
     description:
       "Comprehensive, high-level lifestyle coordination for busy families wanting total reassurance.",
     included: [
       "Multiple social and community outings",
-      "Accompaniment for hospital or Gp appointments.",
+      "Accompaniment for hospital or GP appointments",
       "Light home tidying",
       "Fresh meal preparation and assembly several times a week",
     ],
-     standard: "€35/hr · €1,120/month",
+    standard: "€35/hr · €1,120/month",
     price: "€280/week · €1,120/month",
-    // note: "After 40% tax relief",
     featured: false,
-    bookingUrl:"https://tidycal.com/cairdeconcierege/the-premium-peace-of-mind-package-8hours-per-week",
+    bookingUrl:
+      "https://tidycal.com/cairdeconcierege/the-premium-peace-of-mind-package-8hours-per-week",
+  },
 
+  {
+    type: "trial",
+    hours: "Single 2-hour visit",
+    title: "Trial Visit",
+    description:
+      "New to Cairde? Start with a single 2-hour visit, no commitment, just a chance to meet your companion and see if we're the right fit.",
+    included: [
+      "Meet your companion",
+      "Experience our support",
+      "No ongoing commitment",
+    ],
+    standard: "€65/hour",
+    price: "€130 total · 2 hours",
+    featured: false,
+    bookingUrl:
+      "https://tidycal.com/cairdeconcierege/30-minute-meeting",
+  },
+
+  {
+    type: "adhoc",
+    hours: "4-hour minimum",
+    title: "Ad-Hoc Support",
+    description:
+      "For occasional, non-recurring support, no ongoing commitment, just book the hours you need.",
+    included: [
+      "Occasional support",
+      "Flexible scheduling",
+      "No recurring commitment",
+    ],
+    standard: "€50/hour",
+    price: "€50/hour · 4-hour minimum",
+    featured: false,
+    bookingUrl:
+      "https://tidycal.com/cairdeconcierege/60-minute-meeting",
   },
 ];
 

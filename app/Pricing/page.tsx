@@ -11,7 +11,7 @@ import { buildPageMetadata } from "@/utils/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Pricing",
   description:
-    "Simple, transparent pricing for Cairde Concierge's senior support packages in Dublin — find the plan that fits your family's needs.",
+    "Simple, transparent pricing for Cairde Concierge's senior support packages in Dublin find the plan that fits your family's needs.",
   path: "/Pricing",
 });
 

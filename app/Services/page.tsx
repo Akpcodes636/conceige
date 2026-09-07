@@ -14,7 +14,7 @@ import { buildPageMetadata } from "@/utils/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Services",
   description:
-    "Non-medical senior support services in Dublin — companionship, daily living assistance, and advocacy from Cairde Concierge's one-on-one care team.",
+    "Non-medical senior support services in Dublin companionship, daily living assistance, and advocacy from Cairde Concierge's one-on-one care team.",
   path: "/Services",
 });
 

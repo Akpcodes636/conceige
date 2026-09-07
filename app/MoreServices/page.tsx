@@ -10,7 +10,7 @@ import { buildPageMetadata } from "@/utils/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "More Services",
   description:
-    "Explore the full range of non-medical senior support services Cairde Concierge offers Dublin families — companionship, errands, appointments, and more.",
+    "Explore the full range of non-medical senior support services Cairde Concierge offers Dublin families companionship, errands, appointments, and more.",
   path: "/MoreServices",
 });
 

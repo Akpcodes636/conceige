@@ -26,9 +26,9 @@ export default function Home() {
       {/* <Reveal> */}
         <Offer />
       {/* </Reveal> */}
-      <Reveal>
+      {/* <Reveal>
         <Package />
-      </Reveal>
+      </Reveal> */}
       <Reveal>
         <Journey />
       </Reveal>

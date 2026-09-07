@@ -1,39 +1,3 @@
-export const CorporateContent = [
-    {
-        icon:"/images/Vector-6.png",
-        title:"Practical support",
-        text:"Accompaniment and chaperone for hospital or Gp appointments and social gatherings.Reports and updates sent directly to the faimily"
-    },
-    {
-        icon:"/images/Vector-7.png",
-        title:"Companionship",
-        text:"Meaningful conversations, shared interests, hobbies, and local walks that bring connection, enjoyment, and companionship to everyday life."
-    },
-    {
-        icon:"/images/Vector-8.png",
-        title:"Virtual Administration Support",
-        text:"Virtual administration support service to families across ireland and the diaspora abroad.Online shopping,light tech support."  
-    }
-]
-
-export const CorporateAudience = [
-  {
-    image: "/images/c.jpg",
-    title: "Employers",
-    text: "For organisations that want to recognise and support the responsibilities their employees carry beyond the workplace.",
-  },
-  {
-    image: "/images/corporate-2.jpg",
-    title: "HR & People Teams",
-    text: "For teams looking for practical ways to support employees navigating ageing-parent and family care responsibilities.",
-  },
-  {
-    image: "/images/corporate-3.jpg",
-    title: "Employee Wellbeing Programmes",
-    text: "For organisations looking to take a more holistic approach to employee wellbeing by acknowledging the realities of life outside work.",
-  },
-];
-
 export const Benefits = [
   {
     image: "/images/Vector-6.png",

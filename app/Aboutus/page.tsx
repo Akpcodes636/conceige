@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import FounderAbout from "@/components/About/FounderAbout";
+import HelpWithAbout from "@/components/About/HelpWithAbout";
 import HeroAbout from "@/components/About/HeroAbout";
+import IndependenceAbout from "@/components/About/IndependenceAbout";
+import PhilosophyAbout from "@/components/About/PhilosophyAbout";
 import SupportAbout from "@/components/About/SupportAbout";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -13,7 +16,7 @@ import { buildPageMetadata } from "@/utils/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "About Us",
   description:
-    "Meet the team behind Cairde Concierge — dedicated to giving Dublin seniors consistent, one-on-one companionship and support so they can stay independent at home.",
+    "Meet the team behind Cairde Concierge dedicated to giving Dublin seniors consistent, one-on-one companionship and support so they can stay independent at home.",
   path: "/Aboutus",
 });
 
@@ -23,8 +26,11 @@ export default function Page(){
         <Header />
         <Reveal><HeroAbout /></Reveal>
         <Reveal><SupportAbout /></Reveal>
+        <Reveal><PhilosophyAbout /></Reveal>
         <Reveal><FounderAbout /></Reveal>
+        <Reveal><HelpWithAbout /></Reveal>
         <Reveal><Journey /></Reveal>
+        <Reveal><IndependenceAbout /></Reveal>
         <Reveal><Faq /></Reveal>
         <Reveal><Banner /></Reveal>
         <Footer />
