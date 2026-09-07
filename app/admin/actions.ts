@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createSupabaseServerClient } from "@/utils/supabase/server";
+import { requireAdmin } from "@/utils/supabase/authz";
 import type { BlogSection } from "@/utils/supabase/types";
 
 export type PostFormState = {
@@ -46,6 +47,7 @@ export async function createPost(
   _prevState: PostFormState,
   formData: FormData
 ): Promise<PostFormState> {
+  await requireAdmin();
   const supabase = await createSupabaseServerClient();
   const payload = postPayloadFromForm(formData);
 
@@ -65,6 +67,7 @@ export async function updatePost(
   _prevState: PostFormState,
   formData: FormData
 ): Promise<PostFormState> {
+  await requireAdmin();
   const supabase = await createSupabaseServerClient();
   const payload = postPayloadFromForm(formData);
 
@@ -84,6 +87,7 @@ export async function updatePost(
 }
 
 export async function deletePost(id: string) {
+  await requireAdmin();
   const supabase = await createSupabaseServerClient();
   const { error } = await supabase.from("blog_posts").delete().eq("id", id);
 

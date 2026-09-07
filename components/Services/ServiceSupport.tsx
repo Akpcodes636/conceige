@@ -19,19 +19,55 @@ export default function ServiceSupport() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="flex items-start justify-center flex-col">
-              <h1 className="text-[39px] font-medium leading-[120%] font-poppin text-[#1C2A38] mb-[24px]">
+            <div className="flex flex-col items-start justify-center">
+              {/* CHANGED: Responsive heading size */}
+              <h1
+                className="
+      mb-5
+      text-[30px]
+      font-medium
+      leading-[120%]
+      font-poppin
+      text-[#1C2A38]
+      sm:text-[34px]
+      md:mb-6
+      md:text-[39px]
+    "
+              >
                 Supporting the people behind your team
               </h1>
-              <p className="text-[14px] md:text-[18px] text-[20px] text-[#1C2A38] font-light leading-[160%] mb-[24px] font-body">
-                Caring responsibilities can affect employees in ways that aren&apos;t always visible at work. Cairde Concierge provides practical, non-medical senior support that can help employees better navigate the responsibilities of caring for ageing parents and loved ones.
+
+              {/* CHANGED: Removed conflicting text-[20px]
+      and added responsive sizes */}
+              <p
+                className="
+      mb-6
+      text-[16px]
+      font-normal
+      leading-[160%]
+      font-body
+      text-[#1C2A38]
+      sm:text-[16px]
+      md:text-[18px]
+    "
+              >
+                Caring responsibilities can affect employees in ways that
+                aren&apos;t always visible at work. Cairde Concierge provides
+                practical, non-medical senior support that can help employees
+                better navigate the responsibilities of caring for ageing
+                parents and loved ones.
               </p>
-              <div className="flex items-start justify-start">
+
+              {/* CHANGED: w-full on mobile, natural width on larger screens */}
+              <div className="flex w-full items-start justify-start sm:w-auto">
                 <Link href="/corporate-eldercare">
-                <Button style="reverse" css="w-full h-[50px]" type="button">
-                  Explore Corporate Elder Care
-                </Button>
-                
+                  <Button
+                    style="reverse"
+                    css="h-[50px] w-full sm:w-auto"
+                    type="button"
+                  >
+                    Explore Corporate Elder Support
+                  </Button>
                 </Link>
               </div>
             </div>

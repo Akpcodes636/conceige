@@ -14,9 +14,9 @@ import Faq from "@/components/home/Faq";
 import { buildPageMetadata } from "@/utils/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Corporate Eldercare",
+  title: "Corporate Elder Support",
   description:
-    "Corporate eldercare seminars and preferred-provider partnerships for HR, EAPs and Wellness Coordinators supporting Dublin's Sandwich Generation employees.",
+    "Corporate eldersupport seminars and preferred-provider partnerships for HR, EAPs and Wellness Coordinators supporting Dublin's Sandwich Generation employees.",
   path: "/corporate-eldercare",
 });
 
