@@ -16,7 +16,7 @@ export default function ProjectPricing() {
 
           {/* Main heading */}
           <p className="mb-[12px] text-center font-poppins text-[24px] font-semibold leading-[120%] text-[#1C2A38] md:text-center md:text-[28px] lg:text-[39px]">
-            Specialized One-off Projects & Add-on Services
+            Specialised One-off Projects & Add-on Services
           </p>
 
           {/* Section description */}

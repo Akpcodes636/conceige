@@ -10,7 +10,7 @@ export const navLinks = [
     router: ServicesPage,
   },
   {
-    title: "Corporate Eldercare",
+    title: "Corporate ElderSupport",
     router: "/corporate-eldercare",
   },
   {
@@ -366,7 +366,7 @@ export const PACKAGESPRICING = [
     price: "€280/week · €1,120/month",
     featured: false,
     bookingUrl:
-      "https://tidycal.com/cairdeconcierege/the-premium-peace-of-mind-package-8hours-per-week",
+      "https://tidycal.com/cairdeconcierge/the-premium-peace-of-mind-package-1-120-month",
   },
 
   {
@@ -381,10 +381,10 @@ export const PACKAGESPRICING = [
       "No ongoing commitment",
     ],
     standard: "€65/hour",
-    price: "€130 total · 2 hours",
+    price: "€130 total · 2 hours minimum",
     featured: false,
     bookingUrl:
-      "https://tidycal.com/cairdeconcierege/30-minute-meeting",
+      "https://tidycal.com/cairdeconcierge/trial-visit-not-less-than-2hour-130-total",
   },
 
   {
@@ -399,10 +399,10 @@ export const PACKAGESPRICING = [
       "No recurring commitment",
     ],
     standard: "€50/hour",
-    price: "€50/hour · 4-hour minimum",
+    price: "€200/hour · 4-hour minimum",
     featured: false,
     bookingUrl:
-      "https://tidycal.com/cairdeconcierege/60-minute-meeting",
+      "https://tidycal.com/cairdeconcierge/ad-hoc-support-4-hours-one-off-200",
   },
 ];
 
